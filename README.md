@@ -199,6 +199,49 @@ This is what it looks like when everything is mounted. Perhaps not the most eye 
 Follow this link for a short video demonstration:
 https://youtube.com/shorts/91DA4M26aF4?si=OqnUGSN8jAu8478g
 
+
+# Timestream vs S3
+
+## Timestream
+
+1. **Time-Series Data Model:**
+   - Timestream is designed specifically for time-series data, making it well-suited for storing and querying data points associated with blinds control over time.
+
+2. **Optimized Query Performance:**
+   - Timestream provides optimized query performance for time-series data, allowing quick retrieval of state information and trends.
+
+3. **Automated Data Retention:**
+   - Timestream offers built-in retention policies, automatically managing short-term storage requirements without manual intervention.
+
+4. **Serverless and Scalable:**
+   - Being a serverless database, Timestream automatically scales with data volume, eliminating the need for manual capacity adjustments.
+
+5. **Integration with AWS Services:**
+   - Timestream seamlessly integrates with other AWS services, facilitating the creation of comprehensive IoT solutions.
+
+## S3 (Simple Storage Service)
+
+1. **General-Purpose Storage:**
+   - S3 is a general-purpose object storage service, not specifically tailored for time-series data. It lacks the inherent optimizations for time-based queries.
+
+2. **Manual Data Management:**
+   - Unlike Timestream, S3 requires manual management of data retention and may involve more complex workflows to achieve short-term storage goals.
+
+3. **Object Storage Overhead:**
+   - S3 introduces additional overhead for object storage, making it less streamlined for managing individual data points and time-series data.
+
+4. **Cost Considerations:**
+   - For short-term storage needs, Timestream's pay-as-you-go model may be more cost-effective, as it aligns with the project's focus on efficient data management.
+
+5. **Query Performance Considerations:**
+   - While S3 can store large volumes of data, optimizing and querying time-series data efficiently may require additional tools or configurations.
+
+In summary, Timestream's purpose-built design for time-series data, automated data retention, and seamless integration with AWS services make it a more suitable choice for short-term storage in this project compared to the general-purpose S3.
+
+
+
+
 ## Conclusion
 
 This IoT project successfully integrates an ESP32 microcontroller, AWS services, Grafana, and Discord for an intelligent blinds control system. The secure communication, data storage, detailed visualization, and real-time notifications enhance the user experience and provide valuable insights into the blinds' behavior. The modular architecture allows for easy expansion and customization based on specific requirements.
+
