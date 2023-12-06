@@ -88,6 +88,8 @@ All the connections are shown in the image below:
    - Manually trigger the Lambda function.
    - Check Discord and logs in AWS for execution results.
    - Discord should look something like this if it is successful:
+ 
+
    ![Alt text](Images/Discord.png)
 
 
